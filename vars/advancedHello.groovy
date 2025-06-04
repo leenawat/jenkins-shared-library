@@ -11,6 +11,11 @@ def call(Map config = [:]) {
     if (config.name) {
         sayHello(config.name)
     }
+
+        // advance greeting
+    if (config.name) {
+        helloService.sayHello(config.name)
+    }
     
     // Multi-language greeting
     if (config.language) {
